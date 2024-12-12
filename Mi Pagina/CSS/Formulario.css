@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg);
+    min-height: 160vh;
+    width: 100%;
+    display: flex;
+}
+.contenedor-header {
+    width: 100%;
+    font-size: 30px;
+    position: fixed;
+    border-bottom: 1px solid #2f283e;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99;
+    padding: 0 20px;
+}
+
+.contenedor-header header {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #fff;
+}
+.contenedor-header header nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.contenedor-header header nav a:hover {
+    color: #ff1133;
+}
+#titulo11 {
+    font-size: 60px;
+    color: azure;
+    box-shadow: 10px 10px 15px white;
+    position: absolute;
+    top: 80px;
+    left: 540px;
+    font-family:"Edu AU VIC WA NT Arrows", cursive;
+}
+.form{
+    background-color: rgb(207, 235, 235);
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 1em;
+    padding: 3.5em 2.5em;
+}
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form-title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 0.4rem;
+}
+.form-input{
+    font-size: 1rem;
+    padding: 0.8em 1em;
+}
+.form-input-message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 0.5em;
+}
+.form-cta{
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding:.7rem 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-weight: 400;
+}

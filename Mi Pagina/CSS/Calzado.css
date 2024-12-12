@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contenedor-header {
+    width: 100%;
+    font-size: 30px;
+    position: fixed;
+    border-bottom: 1px solid #2f283e;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99;
+    padding: 0 20px;
+}
+
+.contenedor-header header {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #fff;
+}
+.contenedor-header header nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.contenedor-header header nav a:hover {
+    color: #ff1133;
+}
+body {
+    background-image: url("IMG/Fondo1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+.Tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 1200px;
+    font-size: 130%;
+
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card .front{
+    transform: perspective(600px) rotatey(0deg);
+    box-shadow: 0 5px 10px black ;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: tomato;
+    background-color: black;
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotatey(180deg);
+    background:rgb(172, 133, 133);
+    padding: 15px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+    
+
+}
+.card .back .link{
+    border-top:solid 1px red ;
+    height: 50px;
+    line-height: 50px;
+    color: aquamarine;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotatey(180deg);
+    box-shadow: 0 5px 10px black ;
+}
+.card:hover .back{
+    transform: perspective(600px) rotatey(360deg);
+    box-shadow: 0 5px 10px black ;
+}
